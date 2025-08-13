@@ -29,7 +29,7 @@ const About = () => {
             <div>
                 <motion.h1
                 initial={{opacity:0,y:-100}}
-                animate={{opacity:1,y:0,transition:{duration:0.5,ease:'anticipate'}}}
+                animate={{opacity:1,y:0,transition:{duration:0.5,delay:0.3,ease:'anticipate'}}}
                 viewport={{once:true}}
                 className='gpu-boost md:text-6xl text-4xl font-bold text-blue-600'>
                     About <span className='text-zinc-800'>Us</span>

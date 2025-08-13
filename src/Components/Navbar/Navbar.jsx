@@ -30,7 +30,7 @@ const Navbar = ({handleScroll,setSearchTerm,isScrolled,handlePanel,totalItems,wi
         y:0,
         transition:{
             duration:0.7,
-            delay:.3,
+            delay:0.3,
             ease:'easeIn'
         }
     }}

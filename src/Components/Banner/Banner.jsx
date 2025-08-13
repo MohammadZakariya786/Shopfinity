@@ -43,7 +43,18 @@ const Banner = () => {
     const{hours,minutes,seconds}=formatTime(timeLeft);
 
   return (
-    <section 
+    <motion.section 
+    initial={{
+        opacity:0,
+    }}
+    animate={{
+        opacity:1,
+        transition:{
+            duration:1,
+            delay:0.3,
+            ease:'backIn'
+        }
+    }}
     className='md:h-[75vh] h-[40vh] mt-[14vh] md:bg-cover md:bg-top bg-[length:140%_100%] bg-center  bg-no-repeat' 
     style={{backgroundImage:`url(${BannerImage})`}}>
         <div 
@@ -59,7 +70,7 @@ const Banner = () => {
         </div>
         
 
-    </section>
+    </motion.section>
   )
 }
 
