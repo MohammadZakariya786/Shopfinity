@@ -1,7 +1,7 @@
 import React from 'react'
 import OurMission from '../OurMission/OurMission'
 import { motion } from 'motion/react'
-import aboutus from '../../Assets/aboutus.webp'
+import aboutus from '../../assets/aboutus.webp'
 
 
 const About = () => {
