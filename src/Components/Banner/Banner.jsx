@@ -1,23 +1,24 @@
 import React, { useEffect } from 'react'
 import BannerImage from "../../assets/banner.webp"
 import { useState } from 'react';
-import { motion } from 'motion/react';
+import { delay, motion } from 'motion/react';
 
 const container = {
-  initial: { opacity: 0, x: -50 },
+  initial: { opacity: 0, x: -100 },
   animate: {
     opacity: 1,
     x: 0,
     transition: {
       staggerChildren: 0.2,
-      duration: 0.8,
+      duration: 0.5,
+      delay:0.5,
       ease: "easeIn"
     }
   }
 };
 
 const item = {
-  initial: { opacity: 0, x: -50 },
+  initial: { opacity: 0, x: -100 },
   animate: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeIn" } }
 };
 
