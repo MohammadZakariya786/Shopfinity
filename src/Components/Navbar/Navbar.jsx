@@ -5,6 +5,7 @@ import { GoHeartFill } from "react-icons/go";
 import { HiShoppingBag } from "react-icons/hi2";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from 'react-router-dom';
+import { motion } from 'motion/react';
 const Navbar = ({handleScroll,setSearchTerm,isScrolled,handlePanel,totalItems,wishlist}) => {
     const [menuToggle, setMenuToggle] = useState(false);
     const handleMenu=()=>{
@@ -19,7 +20,22 @@ const Navbar = ({handleScroll,setSearchTerm,isScrolled,handlePanel,totalItems,wi
         }
 
   return (
-    <header className={`bg-blue-600 fixed top-0 left-0 right-0 z-99 ${isScrolled?'shadow-lg':''} `}>
+    <motion.header
+    initial={{
+        opacity:0,
+        y:-70
+    }}
+    animate={{
+        opacity:1,
+        y:0,
+        transition:{
+            duration:0.7,
+            delay:.3,
+            ease:'easeIn'
+        }
+    }}
+    viewport={{once:'true'}}
+    className={`gpu-boost bg-blue-600 fixed top-0 left-0 right-0 z-99 ${isScrolled?'shadow-lg':''} `}>
         <nav className='md:h-[14vh] h-[10vh] max-w-[1300px] md:px-12 px-5 mx-auto flex items-center justify-between'>
             {/* logo */}
             <Link to='/' 
@@ -105,7 +121,7 @@ const Navbar = ({handleScroll,setSearchTerm,isScrolled,handlePanel,totalItems,wi
                         </li>
                     </ul>
                 </div>
-    </header>
+    </motion.header>
   )
 }
 

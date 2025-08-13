@@ -31,7 +31,7 @@ const About = () => {
                 initial={{opacity:0,y:-100}}
                 animate={{opacity:1,y:0,transition:{duration:0.5,ease:'anticipate'}}}
                 viewport={{once:true}}
-                className='md:text-6xl text-4xl font-bold text-blue-600'>
+                className='gpu-boost md:text-6xl text-4xl font-bold text-blue-600'>
                     About <span className='text-zinc-800'>Us</span>
                 </motion.h1>
                 <motion.p 
@@ -39,7 +39,7 @@ const About = () => {
                 animate='animate'
                 variants={leftText}
                 viewport={{once:true}}
-                className='text-zinc-600 md:text-xl mt-5 md:pb-10 pb-5 max-w-[500px]'>We're passionate about bringing you the finest products with exceptional service. Our journey started with a simple vision: to make quality accessible to everyone.</motion.p>
+                className='gpu-boost text-zinc-600 md:text-xl mt-5 md:pb-10 pb-5 max-w-[500px]'>We're passionate about bringing you the finest products with exceptional service. Our journey started with a simple vision: to make quality accessible to everyone.</motion.p>
             </div>
             <motion.div 
             initial={{
@@ -56,15 +56,15 @@ const About = () => {
             viewport={{once:true}}
 
             className='flex gap-x-8 text-center'>
-                <div>
+                <div className='gpu-boost'>
                 <h3 className='md:text-3xl text-2xl  text-blue-500 font-bold'>50K+</h3>
                 <p className='text-zinc-600 md:text-lg text-xs'>Happy Customers</p>
                 </div>
-                <div>
+                <div className='gpu-boost'>
                 <h3 className='md:text-3xl text-2xl text-blue-500  font-bold'>10+</h3>
                 <p className='text-zinc-600 md:text-lg text-xs'>Years Experience</p>
                 </div>
-                <div>
+                <div className='gpu-boost'>
                 <h3 className='md:text-3xl text-2xl text-blue-500  font-bold'>25+</h3>
                 <p className='text-zinc-600 md:text-lg text-xs'>Countries</p>
                 </div>

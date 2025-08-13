@@ -103,9 +103,9 @@ const Product = ({searchTerm,addToCart,addToWishlist,wishlist}) => {
         whileInView={{
             opacity:1,y:0,
             transition:{
-                duration:0.3,
+                duration:1,
                 ease:'easeIn',
-                delay:1.5
+                delay:0.2
             }
         }}
         viewport={{once:true}}
@@ -119,12 +119,13 @@ const Product = ({searchTerm,addToCart,addToWishlist,wishlist}) => {
             whileInView='animate'
             variants={tabContainerVariant}
             viewport={{once:true}}
-            className='flex flex-wrap gap-3 justify-center items-center'>
+            className='gpu-boost flex flex-wrap gap-3 justify-center items-center -mt-5'>
                 {
                     categories.map(category => {
                         return (
                             <motion.button
                             variants={tabButtonVariant}
+                             whileTap={{ scale: 0.90 }}
                             key={category} onClick={() => setActiveTab(category)} className={`cursor-pointer py-2 md:px-8 px-6 rounded-full text-lg
                             ${activeTab === category ? 'bg-blue-600 text-white' : 'bg-zinc-100 text-zinc-800'}`}>{category}</motion.button>
                         )
