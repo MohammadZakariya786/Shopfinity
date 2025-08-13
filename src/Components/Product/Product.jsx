@@ -104,7 +104,8 @@ const Product = ({searchTerm,addToCart,addToWishlist,wishlist}) => {
             opacity:1,y:0,
             transition:{
                 duration:0.3,
-                ease:'easeIn'
+                ease:'easeIn',
+                delay:1.5
             }
         }}
         viewport={{once:true}}

@@ -4,22 +4,22 @@ import { useState } from 'react';
 import { delay, motion } from 'motion/react';
 
 const container = {
-  initial: { opacity: 0, x: -100 },
+  initial: { opacity: 0, x: -50 },
   animate: {
     opacity: 1,
     x: 0,
     transition: {
-      staggerChildren: 0.2,
+        delay:1,
+        staggerChildren: 0.2,
       duration: 0.5,
-      delay:0.5,
-      ease: "easeIn"
+      ease: "easeOut"
     }
   }
 };
 
 const item = {
-  initial: { opacity: 0, x: -100 },
-  animate: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeIn" } }
+  initial: { opacity: 0, x: -50 },
+  animate: { opacity: 1, x: 0, transition: { duration: 0.4, ease: "easeOut" } }
 };
 
 const Banner = () => {
@@ -68,16 +68,16 @@ const Banner = () => {
         animate='animate'
         variants={container}
         viewport={{once:true}}
-        className='gpu-boost max-w-[1300px] mx-auto md:px-12 px-6 flex flex-col justify-center md:h-100 h-70 gap-3'>
+        className='max-w-[1300px] mx-auto md:px-12 px-6 flex flex-col justify-center md:h-100 h-70 gap-3'>
             <motion.h1
             variants={item}
-            className=' text-red-600 md:text-9xl text-5xl font-bold  uppercase tracking-tight'>Big Sale!</motion.h1>  
+            className='gpu-boost text-red-600 md:text-9xl text-5xl font-bold  uppercase tracking-tight'>Big Sale!</motion.h1>  
             <motion.h2
             variants={item}
-            className=' text-zinc-800 md:text-3xl text-xl md:max-w-full max-w-[200px]'>Up to 50% Off - Limited Time Only!</motion.h2>
+            className='gpu-boost text-zinc-800 md:text-3xl text-xl md:max-w-full max-w-[200px]'>Up to 50% Off - Limited Time Only!</motion.h2>
             <motion.div
             variants={item}
-            className='md:text-6xl text-xl font-bold text-zinc-800 flex md:gap-x-3 gap-x-2 md:mt-5 items-center'>
+            className='gpu-boost md:text-6xl text-xl font-bold text-zinc-800 flex md:gap-x-3 gap-x-2 md:mt-5 items-center'>
                 <span className='text-white bg-zinc-800 md:p-3 p-2'>{hours}</span>:
                 <span className='text-white bg-zinc-800 md:p-3 p-2'>{minutes}</span>:
                 <span className='text-white bg-zinc-800 md:p-3 p-2'>{seconds}</span>
