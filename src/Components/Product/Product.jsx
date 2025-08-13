@@ -109,7 +109,7 @@ const Product = ({searchTerm,addToCart,addToWishlist,wishlist}) => {
         }}
         viewport={{once:true}}
         
-        id='product-section' className='max-w-[1300px] mx-auto md:px-12 px-6 py-10'>
+        id='product-section' className='gpu-boost max-w-[1300px] mx-auto md:px-12 px-6 py-10'>
             {/* heading  */}
             <Heading highlight='Our' heading='Products'/>
             {/* tabs */}
@@ -133,7 +133,7 @@ const Product = ({searchTerm,addToCart,addToWishlist,wishlist}) => {
             {/* product listing */}
             <div
 
-            className='grid lg:grid-cols-4 md:grid-cols-2  grid-cols-1 gap-9 mt-12'>
+            className='gpu-boost grid lg:grid-cols-4 md:grid-cols-2  grid-cols-1 gap-9 mt-12'>
                  {
                     filteredItems.length===0?
                     <p className='text-center col-span-4 text-zinc-800 text-lg'>No Product Found</p>:
