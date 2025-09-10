@@ -36,7 +36,7 @@ const Navbar = ({handleScroll,setSearchTerm,isScrolled,handlePanel,totalItems,wi
     }}
     viewport={{once:'true'}}
     className={`gpu-boost bg-blue-600 fixed top-0 left-0 right-0 z-99 ${isScrolled?'shadow-lg':''} `}>
-        <nav className='md:h-[14vh] h-[10vh] max-w-[1300px] md:px-12 px-5 mx-auto flex items-center justify-between'>
+        <nav className='md:h-[14vh] h-[10vh] max-w-[1300px]  md:px-12 px-5 mx-auto flex items-center justify-between'>
             {/* logo */}
             <Link to='/' 
             onClick={scrollTop}
@@ -92,22 +92,22 @@ const Navbar = ({handleScroll,setSearchTerm,isScrolled,handlePanel,totalItems,wi
             
         </nav>
             {/* hamburger menu  */}
-            <div className={`md:hidden flex bg-blue-600 w-auto justify-center  h-auto fixed border-t-2 border-white ${menuToggle?'right-0':'-right-80'} transition-all duration-200`}>
+            <div className={`md:hidden flex bg-white   w-full justify-center  h-auto fixed border-t-2 border-white ${menuToggle?'translate-x-0':'translate-x-full'} transition-all duration-200`}>
                     <ul className='flex flex-col gap-y-3 text-center py-5 w-full'>
                         <li className='pb-3'>
                             <Link to='/' 
                             onClick={onLinkMenuClose}
-                            className='font-semibold text-lg text-white active:border-b-2 '>Home</Link>
+                            className='font-semibold text-lg text-blue-500 active:border-b-2 '>Home</Link>
                         </li>
                         <li className='pb-3'>
                             <Link to='/about'
                             onClick={onLinkMenuClose}
-                            className='font-semibold text-lg text-white active:border-b-2 '>About</Link>
+                            className='font-semibold text-lg text-blue-500 active:border-b-2 '>About</Link>
                         </li>
                         <li className='pb-3'>
                             <Link to='/contact' 
                             onClick={onLinkMenuClose}
-                            className='font-semibold text-lg active:border-b-2 text-white transition-all duration-100'>Contact Us
+                            className='font-semibold text-lg active:border-b-2 text-blue-500 transition-all duration-100'>Contact Us
                             </Link>
                         </li>
                         <li> 

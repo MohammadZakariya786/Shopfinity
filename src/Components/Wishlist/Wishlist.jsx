@@ -10,7 +10,7 @@ const Wishlist = ({activePanel,handleClose,wishlist,addToCart,clearWishlist}) =>
                 <h3 className='text-3xl font-bold text-zinc-800 text-center'>Your Wishlist</h3>
             </div>
             {/* cart items  */}
-          <div className='flex-1 flex flex-col gap-2'>
+          <div className='flex-1 flex flex-col gap-2 overflow-y-auto scroll'>
               {
                   wishlist.length === 0 ?
                       (<p className='text-zinc-800 text-center'>Your Wishlist is Empty</p>) :
@@ -26,9 +26,9 @@ const Wishlist = ({activePanel,handleClose,wishlist,addToCart,clearWishlist}) =>
                                       </div>
                                       {/* product details  */}
                                       <div className='flex-1'>
-                                          <div className='flex justify-between'>
+                                          <div className='flex flex-col'>
+                                              <p className='md:text-sm text-[12px] text-zinc-500 py-2 '>Added:{product.addDate}</p>
                                               <h4 className='font-semibold text-lg text-zinc-800'>{product.name}</h4>
-                                              <p className='md:text-sm text-[12px] text-zinc-500 '>Added:{product.addDate}</p>
                                           </div>
                                           <div className='flex justify-between'>
                                               <div>

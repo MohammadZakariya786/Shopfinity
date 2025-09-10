@@ -4,6 +4,7 @@ import Product from '../Product/Product'
 import Testimonial from '../Testimonial/Testimonial'
 import Partner from '../Partners/Partner'
 import WhyChooseUs from '../WhyChooseUs/WhyChooseUs'
+import ProductCopy from '../Product/Product'
 
 
 
@@ -21,8 +22,6 @@ const Home = ({searchTerm,wishlist,addToCart,addToWishlist}) => {
         <WhyChooseUs/>
         {/* partner  */}
         <Partner/>
-        
-
     </div>
   )
 }

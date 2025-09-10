@@ -25,9 +25,10 @@ const Cart = ({ activePanel, handleClose, cart,removeItem,quantityIncrement,quan
                                 </div>
                                 {/* product details  */}
                                 <div className='flex-1'>
-                                    <div className='flex justify-between'>
-                                        <h4 className='font-semibold text-lg text-zinc-800'>{product.name}</h4>
-                                        <button className='w-8 h-8 bg-red-600 text-white rounded-full flex justify-center items-center mr-[26px] cursor-pointer active:bg-red-700' onClick={()=>removeItem(product)}><IoTrash /></button>
+                                    <div className='flex flex-col justify-betwee'>
+                                        <h4 className='font-semibold text-lg text-zinc-800 w-[75%]'>{product.name}</h4>
+                                        <div className='flex flex-col items-end'><button className=' w-8 h-8 bg-red-600 text-white rounded-full flex justify-center items-center mr-[26px] cursor-pointer active:bg-red-700' onClick={()=>removeItem(product)}><IoTrash /></button>
+                                        </div>
                                     </div>
                                     <div className='flex justify-between'>
                                         <div>

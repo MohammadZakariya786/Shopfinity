@@ -122,7 +122,7 @@ const App = () => {
 
   return (
       <BrowserRouter>
-      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} />
+      <ToastContainer position="bottom-right" autoClose={2000} hideProgressBar={false} />
       <ScrollToTop/>
 
       <Navbar
