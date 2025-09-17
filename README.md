@@ -1,8 +1,5 @@
-# 🌐 ShopFinity – Modern React E-commerce Platform  
-
-<p align="center">
-  <img src="public/logo.png" alt="ShopFinity Logo" width="120"/>
-</p>
+<h1 align="center">🛍️ ShopFinity</h1>
+<p align="center">A modern, responsive e-commerce platform built with React, Vite, and Tailwind CSS.</p>
 
 <p align="center">
   <a href="https://react.dev/">
@@ -30,7 +27,6 @@
     <img src="https://img.shields.io/github/last-commit/MohammadZakariya786/Shopfinity" alt="Last commit"/>
   </a>
 </p>
-
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=flat-square" /></a>
