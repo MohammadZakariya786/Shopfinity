@@ -1,5 +1,5 @@
 <h1 align="center">🛍️ ShopFinity</h1>
-<p align="center">A modern, responsive e-commerce platform built with React, Vite, and Tailwind CSS.</p>
+<p align="center">A modern, responsive e-commerce platform built with React, Vite, Tailwind CSS, and Framer Motion.</p>
 
 <p align="center">
   <a href="https://react.dev/">
@@ -66,7 +66,7 @@ It provides a seamless shopping experience with product catalog, cart, wishlist,
 - 🌟 **Testimonials & Partners** – Customer reviews and trusted brand showcase.  
 - 📱 **Responsive Design** – Optimized for mobile, tablet, and desktop.  
 - ⚡ **Performance** – Powered by Vite for blazing-fast builds.  
-- 🎨 **Modern UI/UX** – Tailwind styling + Motion One animations.  
+- 🎨 **Modern UI/UX** – Tailwind styling + Framer Motion animations. 
 - 🔔 **Smart Notifications** – Feedback via [react-toastify](https://fkhadra.github.io/react-toastify/introduction/).  
 - 🧭 **Client-Side Routing** – Smooth navigation with React Router.  
 
@@ -77,7 +77,7 @@ It provides a seamless shopping experience with product catalog, cart, wishlist,
 - ⚛️ [React](https://react.dev/)  
 - ⚡ [Vite](https://vitejs.dev/)  
 - 🎨 [Tailwind CSS](https://tailwindcss.com/)  
-- 🎬 [Motion One](https://motion.dev/)  
+- 🎬 [Framer Motion](https://www.framer.com/motion/)
 - 🧭 [React Router](https://reactrouter.com/)  
 - 🔔 [React Toastify](https://fkhadra.github.io/react-toastify/introduction/)  
 - 🎠 [Swiper](https://swiperjs.com/)  
