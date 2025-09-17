@@ -11,6 +11,9 @@
   <a href="https://tailwindcss.com/">
     <img src="https://img.shields.io/badge/Tailwind-CSS-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
   </a>
+  <a href="https://www.framer.com/motion/">
+    <img src="https://img.shields.io/badge/Framer-Motion-Fuchsia?logo=framer&logoColor=white" alt="Framer Motion"/>
+  </a>
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/>
   </a>
