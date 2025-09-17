@@ -5,12 +5,26 @@
 </p>
 
 <p align="center">
-  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white" alt="React"/></a>
-  <a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/Vite-Fast-purple?logo=vite&logoColor=yellow" alt="Vite"/></a>
-  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind-CSS-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/></a>
-  <a href="https://github.com/your-username/ecommerce-project/stargazers"><img src="https://img.shields.io/github/stars/your-username/ecommerce-project?style=social" alt="GitHub stars"/></a>
+  <a href="https://react.dev/">
+    <img src="https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white" alt="React"/>
+  </a>
+  <a href="https://vitejs.dev/">
+    <img src="https://img.shields.io/badge/Vite-Fast-purple?logo=vite&logoColor=yellow" alt="Vite"/>
+  </a>
+  <a href="https://tailwindcss.com/">
+    <img src="https://img.shields.io/badge/Tailwind-CSS-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/>
+  </a>
+  <a href="https://github.com/MohammadZakariya786/Shopfinity/stargazers">
+    <img src="https://img.shields.io/github/stars/MohammadZakariya786/Shopfinity?style=social" alt="GitHub stars"/>
+  </a>
+  <a href="https://github.com/MohammadZakariya786/Shopfinity/network/members">
+    <img src="https://img.shields.io/github/forks/MohammadZakariya786/Shopfinity?style=social" alt="GitHub forks"/>
+  </a>
 </p>
+
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=flat-square" /></a>
