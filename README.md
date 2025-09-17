@@ -39,7 +39,7 @@
 
 ---
 
-ShopFinity is a **modern, responsive e-commerce web application** built with **React**, **Vite**, and **Tailwind CSS**.  
+ShopFinity is a **modern, responsive e-commerce web application** built with **React**, **Vite**, **Tailwind CSS**, and **Framer Motion**.  
 It provides a seamless shopping experience with product catalog, cart, wishlist, order system, testimonials, partner showcase, and more.  
 
 > ⚡ **Tip:** ShopFinity is fully optimized with **Vite** for lightning-fast development and builds.  
@@ -108,11 +108,11 @@ npm run dev   # or yarn dev
 
 Open 👉 http://localhost:5173
 
-📦 Build for Production
+## 📦 Build for Production
 npm run build    # or yarn build
 npm run preview  # or yarn preview
 
-📂 Project Structure
+## 📂 Project Structure
 ecommerce-project/
 ├── public/
 │   └── logo.png
@@ -128,7 +128,7 @@ ecommerce-project/
 ├── vite.config.js
 └── ...
 
-🎨 Customization
+## 🎨 Customization
 
 Products – Modify product fetching logic in
 src/Components/Product/ProductList.js
@@ -143,7 +143,7 @@ Styling – Update Tailwind classes or add custom CSS in
 src/index.css
 .
 
-🌍 Deployment
+## 🌍 Deployment
 
 Ready to deploy on:
 
