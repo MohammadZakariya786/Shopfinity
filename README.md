@@ -23,6 +23,12 @@
   <a href="https://github.com/MohammadZakariya786/Shopfinity/network/members">
     <img src="https://img.shields.io/github/forks/MohammadZakariya786/Shopfinity?style=social" alt="GitHub forks"/>
   </a>
+  <a href="https://github.com/MohammadZakariya786/Shopfinity/watchers">
+    <img src="https://img.shields.io/github/watchers/MohammadZakariya786/Shopfinity?style=social" alt="GitHub watchers"/>
+  </a>
+  <a href="https://github.com/MohammadZakariya786/Shopfinity/commits/main">
+    <img src="https://img.shields.io/github/last-commit/MohammadZakariya786/Shopfinity" alt="Last commit"/>
+  </a>
 </p>
 
 
