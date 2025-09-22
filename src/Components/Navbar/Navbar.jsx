@@ -66,9 +66,11 @@ const Navbar = ({handleScroll,setSearchTerm,isScrolled,handlePanel,totalItems,wi
                 {/* search bar  */}
                 <div className='hidden p-1 rounded-full border-2 bg-white border-white md:flex'>
                     <input type='text' name='search' id='search' placeholder='Search your Product' autoComplete='off'
-                    className='md:h-[5vh] h-[3vh] md:w-full w-[15vh] md:pl-4 pl-2 flex-1 focus:outline-none ' onFocus={handleScroll}
+                    className='md:h-[5vh] h-[3vh] xl:h-[2vh]   py-4 md:w-full w-[15vh] md:pl-4 pl-2 flex-1 focus:outline-none ' onFocus={handleScroll}
                     onChange={(e)=>setSearchTerm(e.target.value)}/>
-                    <button className='bg-blue-500 w-8 h-8 rounded-full text-white text-xl flex justify-center items-center cursor-pointer active:bg-blue-600'><IoSearch/></button>
+                    <button 
+                    onClick={handleScroll}
+                    className='bg-blue-500 w-8 h-8   rounded-full text-white text-xl flex justify-center items-center cursor-pointer active:bg-blue-600'><IoSearch/></button>
                 </div>
                 {/* icons  */}
                 <button className='text-[1.9rem] text-white relative cursor-pointer' onClick={()=>handlePanel('wishlist')}>
@@ -116,7 +118,9 @@ const Navbar = ({handleScroll,setSearchTerm,isScrolled,handlePanel,totalItems,wi
                     <input type='text' name='search' id='search' placeholder='Search...' autoComplete='off'
                     className=' h-[3vh] w-[15vh] pl-2 flex-1 focus:outline-none' onFocus={handleScroll}
                     onChange={(e)=>setSearchTerm(e.target.value)}/>
-                    <button className='bg-blue-500  w-7  h-7  rounded-full text-white text-lg flex justify-center items-center'><IoSearch/></button>
+                    <button 
+                    onClick={handleScroll}
+                    className='bg-blue-500  w-7  h-7  rounded-full text-white text-lg flex justify-center items-center'><IoSearch/></button>
                 </div>
                         </li>
                     </ul>

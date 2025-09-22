@@ -3,6 +3,8 @@ import { animate, delay, easeIn, motion } from 'motion/react'
 import { GoHeartFill } from 'react-icons/go'
 import Heading from '../Heading/Heading'
 import { useEffect } from 'react'
+import Lottie from 'lottie-react';
+import loadingAnimation from '../../assets/loading.json';
 import AllImg from '../../assets/All.webp'
 import WomenImg from '../../assets/Women.webp'
 import JewelleryImg from '../../assets/Jewellery.webp'
@@ -40,10 +42,12 @@ const tabButtonVariant={
 const Product = ({searchTerm,addToCart,addToWishlist,wishlist}) => {
     const [activeTab, setActiveTab] = useState('All')
     const [productList, setProductList] = useState([])
+    const [loading, setLoading] = useState(true);
 
 
     useEffect(()=>{
         const getUsersData= async()=>{
+             setLoading(true);
             const url='https://fakestoreapi.com/products?limit=30'
             let response=await fetch(url)
             response=await response.json()
@@ -75,7 +79,8 @@ const Product = ({searchTerm,addToCart,addToWishlist,wishlist}) => {
                ?"Jewellery"
                :"Electronics"}
             })
-            setProductList(formattedData)
+            setProductList(formattedData);
+            setLoading(false);
         }
         getUsersData();
     },[])
@@ -170,8 +175,7 @@ const categoryImages = {
                 delay:0.2
             }
         }}
-        viewport={{once:true}}
-        
+        viewport={{once:true}} 
         id='product-section' className='gpu-boost max-w-[1300px] mx-auto md:px-12 px-6 py-10'>
             {/* heading  */}
             <Heading highlight='Our' heading='Products'/>
@@ -210,11 +214,21 @@ const categoryImages = {
             <div
 
             className='gpu-boost grid lg:grid-cols-4  md:grid-cols-2  grid-cols-1 gap-9 mt-12'>
-                 {
-                    filteredItems.length===0?
-                    <p className='text-center col-span-4 text-zinc-800 text-lg'>No Product Found</p>:
-                    renderProducts
-                }
+                {loading ? (
+        // Lottie loading animation
+        <div className='flex flex-col md:col-span-4 justify-center items-center  h-[400px]'>
+            <Lottie 
+                animationData={loadingAnimation} 
+                loop={true} 
+                style={{ height: 200, width: 200 }} 
+            />
+            <h3 className='mt-5 text-[1.2rem] text-blue-400 font-medium'>Products Loading....</h3>
+        </div>
+    ) : filteredItems.length === 0 ? (
+        <p className='text-center col-span-4 text-zinc-800 text-lg'>No Product Found</p>
+    ) : (
+        renderProducts
+    )}
             </div>
         </motion.section>
     )
